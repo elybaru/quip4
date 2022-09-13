@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  # root 'components#index'
+  namespace :api do
+    root 'components#index'
+  end
+  
   
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!
